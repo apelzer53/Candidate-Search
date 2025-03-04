@@ -1,33 +1,66 @@
-# React + TypeScript + Vite
+# Candidate Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a candidate search application that uses the GitHub API to display candidate profiles. It allows users to save or skip candidates, view a list of saved candidates, and persist this data in the browser. The application is built using TypeScript, and it's deployed on Render.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- TypeScript
+- GitHub API
+- Local Storage
+- HTML/CSS
+- React
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-* Configure the top-level `parserOptions` property as follows:
+- Displays a list of candidate profiles, including name, username, location, avatar, email, company, and profile URL.
+- Allows users to save a candidate to the list or skip to the next candidate.
+- Persist the list of saved candidates after page reload.
+- Displays a list of saved candidates on a separate page with all the details.
+- Message displayed when no more candidates are available.
+- Option to view a list of saved candidates, even if none have been accepted.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+1. Clone the repository:
+2. Install the dependencies
+3. Create a .env file
+4. Run the deployement server
+
+## Usage
+
+1. Open the application in your browser.
+2. The application will display a candidate profile.
+3. Click the "+" button to save the candidate or the "-" button to skip the candidate.
+4. Navigate to the "Saved Candidates" page to view the list of saved candidates.
+
+## Screenshots
+
+![Saved Candidates Page](image.png)
+
+![Candidate Search Page](image-4.png)
+
+## Deployment
+
+The application is deployed on Render.
+
+## Links
+
+https://github.com/apelzer53/Candidate-Search
+
+## Future Enhancements
+
+- Add search functionality to filter candidates by name, location, or company.
+- Implement pagination for candidate profiles.
+- Improve UI with additional interactivity and responsiveness.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
