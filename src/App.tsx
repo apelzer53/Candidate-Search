@@ -1,7 +1,5 @@
 import { Outlet } from 'react-router-dom';  // Removed Router, Routes, and Route imports
 import Nav from './components/Nav';
-import CandidateSearch from './pages/CandidateSearch';
-import SavedCandidates from './pages/SavedCandidates';
 
 function App() {
   return (
